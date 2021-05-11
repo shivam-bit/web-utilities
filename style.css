@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+  line-height: calc(1ex / 0.42);
+  color: white;
+}
+
+body {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+body,
+a {
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+button {
+  padding: 0.75rem;
+  width: 9rem;
+  border-radius: 10rem;
+  border-width: 1px;
+  margin-bottom: 1rem;
+  background-color:#2285F5;
+  font-size: medium;
+  font-weight: 700;
+}
+
+textarea {
+  width: -webkit-fill-available;
+  resize: none;
+  padding: 0.5rem;
+  background-color:#F0EDE8;
+  color: black;
+}
+
+.navbar {
+  /* border: aqua 2px solid; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  padding: 0.8rem;
+  border-bottom: 1px solid #747490;
+  background-color:#6341DF;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  padding: 0.5rem;
+  align-self: flex-end;
+
+  /* border: 2px solid red; */
+}
+
+.menu-item {
+  border-left: 1px solid#54F86C;
+  border-right: 1px solid#54F86C;
+  padding: 0 1rem;
+
+  /* border: 2px solid springgreen; */
+
+  /* margin: 0.5rem 0; */
+}
+
+.logo {
+  flex-grow: 1;
+  text-align: center;
+
+  /* border: 2px solid springgreen; */
+}
+
+.bgnew {
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right top, #051937, #0c152b, #0d1020, #0a0a15, #040405);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-left: auto;
+  padding-right: auto;
+  margin-top: 4%;
+  text-align: center;
+  align-items: center;
+  
+  /* background-color: teal; */
+}
+
+.header-text,
+.io-area,
+.add-space {
+  display: flex;
+  width: auto;
+  max-width: 90%;
+  align-self: center;
+  /* flex-direction: column; */
+
+  /* text-align: center; */
+
+  /* align-items: center; */
+
+  /* align-content: center; */
+
+  /* border: 2px solid purple; */
+}
+
+.input-area,
+.button-area,
+.output-area {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+  width: auto;
+  height: auto;
+  padding: 1rem;
+  align-self: center;
+
+  /* vertical-align: middle; */
+
+  /* flex-direction: column; */
+}
+
+.io-area {
+  padding: 2rem 1rem;
+}

@@ -1,0 +1,74 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap'); */
+
+.main {
+  /* background-color: teal; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-left: auto;
+  padding-right: auto;
+  margin-top: 10%;
+  text-align: center;
+  align-items: center;
+
+  /* align-content: center; */
+  }
+
+.header-text,
+.io-area,
+.add-space {
+  display: flex;
+  width: auto;
+  max-width: 90%;
+  align-self: center;
+
+  /* text-align: center; */
+
+  /* align-items: center; */
+
+  /* align-content: center; */
+
+  /* border: 2px solid purple; */
+
+  /* flex-direction: column; */
+}
+
+.input-area,
+.button-area,
+.output-area {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+  width: auto;
+  height: auto;
+  padding: 1rem;
+  align-self: center;
+
+  /* vertical-align: middle; */
+
+  /* flex-direction: column; */
+}
+
+textarea {
+  width: -webkit-fill-available;
+  resize: none;
+  padding: 0.5rem;
+  background-color: #EDEDED;
+  color: black;
+}
+
+.io-area {
+  padding: 2rem 1rem;
+}
+
+button {
+  padding: 0.75rem;
+  width: 9rem;
+  border-radius: 10rem;
+  border-width: 1px;
+  margin-bottom: 1rem;
+  background-color:#54F86C;
+  font-size: medium;
+  font-weight: 700;
+}
