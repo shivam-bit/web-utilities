@@ -36,15 +36,15 @@ button {
 }
 
 textarea {
-  width: -webkit-fill-available;
+  max-width: 50ch;
   resize: none;
   padding: 0.5rem;
   background-color:#F0EDE8;
   color: black;
+  font-size: 1.25rem;
 }
 
 .navbar {
-  /* border: aqua 2px solid; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -53,6 +53,8 @@ textarea {
   padding: 0.8rem;
   border-bottom: 1px solid #747490;
   background-color:#6341DF;
+  position: sticky;
+  top:0;
 }
 
 .menu {
@@ -63,25 +65,23 @@ textarea {
   align-content: center;
   padding: 0.5rem;
   align-self: flex-end;
-
-  /* border: 2px solid red; */
 }
 
 .menu-item {
   border-left: 1px solid#54F86C;
   border-right: 1px solid#54F86C;
   padding: 0 1rem;
-
-  /* border: 2px solid springgreen; */
-
-  /* margin: 0.5rem 0; */
 }
 
 .logo {
   flex-grow: 1;
   text-align: center;
+}
 
-  /* border: 2px solid springgreen; */
+.logo img {
+  height: 2rem;
+  margin: 0;
+  padding: 0;
 }
 
 .bgnew {
@@ -103,32 +103,20 @@ textarea {
   margin-top: 4%;
   text-align: center;
   align-items: center;
-  
-  /* background-color: teal; */
 }
 
 .header-text,
 .io-area,
-.add-space {
+.ad-space {
   display: flex;
   width: auto;
   max-width: 90%;
   align-self: center;
-  /* flex-direction: column; */
-
-  /* text-align: center; */
-
-  /* align-items: center; */
-
-  /* align-content: center; */
-
-  /* border: 2px solid purple; */
 }
 
 .input-area,
 .button-area,
 .output-area {
-  /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
   max-width: 90%;
@@ -136,12 +124,58 @@ textarea {
   height: auto;
   padding: 1rem;
   align-self: center;
-
-  /* vertical-align: middle; */
-
-  /* flex-direction: column; */
 }
 
 .io-area {
   padding: 2rem 1rem;
+}
+
+/* footer starts here */
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 10vh;
+  min-height: fit-content;
+  max-width: 98vw;
+  width: 100%;
+  border-top: #5657DE 1px solid;
+  align-content: space-between;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5rem;
+  position: absolute;
+  bottom: 0px;
+}
+
+footer > * {
+  min-width: 9.5rem;
+}
+
+.footer-logo {
+  padding-left: 1rem;
+}
+
+.social-menu {
+  display: inline-flex;
+}
+
+.creator-text {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.fa-twitter {
+  color:#1DA1F2;
+}
+
+.fa-linkedin-in {
+ color:#1DC5F2;
+}
+
+.fab {
+  margin: 5px 10px;
 }
