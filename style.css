@@ -186,7 +186,7 @@ footer > * {
 }
 
 .fa-linkedin-in {
- color:#1DC5F2;
+  color:#1DC5F2;
 }
 
 .fab {
@@ -201,18 +201,21 @@ footer > * {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content:space-around;
+  justify-content: space-around;
   padding: 1rem 2rem;
   margin: 0;
 }
+
 .main-text {
   max-width: 50ch;
   min-width: fit-content;
   text-align: center;
 }
+
 .main-illustration {
   padding: 3rem;
 }
+
 .main-illustration > img {
   min-height: fit-content;
   min-width: fit-content;
@@ -249,9 +252,11 @@ footer > * {
   .io-area {
     flex-direction: column;
   }
+
   footer {
     flex-direction: column;
   }
+
   #site-name {
     font-size: 2rem;
   }
@@ -263,14 +268,15 @@ footer > * {
   #site-desc {
     font-size: 1rem;
   }
+
   .main-illustration {
-    padding:1rem;
+    padding: 1rem;
     max-width: 97vw;
   }
+
   .main-illustration > img {
     max-width: 85vw;
     height: 20rem;
-    object-fit:fill ;
+    object-fit: fill;
   }
-
 }
