@@ -109,6 +109,10 @@ textarea {
   padding: 0;
 }
 
+#toggleBtn {
+  display: none;
+}
+
 /* Navbar ends here */
 
 /* Main starts here */
@@ -249,6 +253,14 @@ footer > * {
 /* Main ends here */
 
 @media screen and (max-width: 1024px) {
+  .menu {
+    display: none;
+  }
+
+  #toggleBtn {
+    display: flex;
+  }
+
   .io-area {
     flex-direction: column;
   }
@@ -256,6 +268,7 @@ footer > * {
   footer {
     flex-direction: column;
   }
+
 
   #site-name {
     font-size: 2rem;
