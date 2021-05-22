@@ -5,17 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/styles/md5.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
-    <script src="/scripts/md5.js"></script>
+    <link rel="stylesheet" href="/styles/url-enc-dec.css">
+    <script src="/scripts/rgb-hex.js"></script>
     <script src="/script.js"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <title>MD5 Hash Generator</title>
+    <title>RGB HEX Converter</title>
 </head>
 <body>
     <div class="bgnew"></div>
     <nav class="navbar">
-        <div class="logo" id="logo"><a href="/index.html">WEB UTILITIES</a></div>
+        <div class="logo" id="logo"><a href="/index.html">WEB UTILITIES</a> </div>
         <i class="fas fa-bars" id="toggleBtn"></i>
         <i class="fas fa-times" id="crossBtn"></i>
         <div class="menu">
@@ -31,13 +30,13 @@
     <section>
         <div class="main">
             <div class="header-text">
-                <h1>Welcome to MD5 Hash Generator</h1>
+                <h1>Welcome to RGB HEX Converter</h1> 
             </div>
             <div class="ad-space"></div>
             <div class="io-area">
                 <div class="input-area">
                     <div class="section-header">
-                        <label for="input-text"><h2>Input Text</h2></label>
+                        <label for="input-text"><h2>RGB</h2></label>
                         <div class="icons-pack">
                             <i class="fas fa-copy"></i>
                             <i class="fas fa-trash"></i>
@@ -46,13 +45,10 @@
                     <textarea name="input-text" id="input-text" cols="40" rows="15"></textarea>
                 </div>
                 <br>
-                <div class="button-area">
-                    <button id="encodeBtn" class="funcBtn">Generate</button>
-                </div>
-                <br>
+                <div class="button-area color-box"></div>
                 <div class="output-area">
                     <div class="section-header">
-                        <label for="output-text"><h2>Output Text</h2></label>
+                        <label for="outut-text"><h2>HEX</h2></label>
                         <div class="icons-pack">
                             <i class="fas fa-copy"></i>
                             <i class="fas fa-trash"></i>

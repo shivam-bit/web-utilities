@@ -113,6 +113,10 @@ textarea {
   display: none;
 }
 
+#crossBtn {
+  display: none;
+}
+
 /* Navbar ends here */
 
 /* Main starts here */
@@ -252,6 +256,33 @@ footer > * {
 
 /* Main ends here */
 
+.color-box {
+  display: none;
+  align-self:flex-end;
+  /* background-color: aqua; */
+  height: 240px;
+  width: 100px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5%;
+}
+
+.section-header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icons-pack > *{
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+textarea {
+  border-radius: 5%;
+}
+
 @media screen and (max-width: 1024px) {
   .menu {
     display: none;
@@ -291,5 +322,10 @@ footer > * {
     max-width: 85vw;
     height: 20rem;
     object-fit: fill;
+  }
+
+  .color-box {
+    height: 100px;
+    width: 240px;
   }
 }
