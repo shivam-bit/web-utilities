@@ -9,8 +9,8 @@ html,
 body {
   width: 100%;
   height: 100%;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
 }
 
@@ -55,6 +55,7 @@ textarea {
   background-color:#F0EDE8;
   color: black;
   font-size: 1.25rem;
+  border-radius: 5%;
 }
 
 .bgnew {
@@ -75,11 +76,19 @@ textarea {
   justify-content: space-around;
   align-items: center;
   align-content: center;
-  padding: 0.8rem;
+  padding: 0;
   border-bottom: 1px solid #747490;
   background-color:#6341DF;
   position: sticky;
   top: 0;
+  min-height: 7vh;
+}
+
+.menu-logos {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .menu {
@@ -90,12 +99,59 @@ textarea {
   align-content: center;
   padding: 0.5rem;
   align-self: flex-end;
+  height: 100%;
 }
 
 .menu-item {
-  border-left: 1px solid#54F86C;
-  border-right: 1px solid#54F86C;
+  /* border-left: 1px solid#54F86C;
+  border-right: 1px solid#54F86C; */
   padding: 0 1rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: auto;
+}
+
+.drop-down-menu {
+  position: absolute;
+  top: 7vh;
+  flex-direction: column;
+  display: none;
+  width: 100%;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+  overflow: hidden;
+}
+
+.drop-down-menu-item {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drop-down-menu-item > a {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+
+  /* background-color: #2B157A; */
+}
+
+.drop-down-menu-item > a:hover {
+  background-color: red;
+}
+
+.show {
+  display: flex;
+  background-color: #2B157A;
+  z-index: 1;
 }
 
 .logo {
@@ -165,7 +221,7 @@ footer {
   min-height: fit-content;
   max-width: 98vw;
   width: 100%;
-  border-top: #5657DE 1px solid;
+  border-top: 1px  solid #5657DE;
   align-content: space-between;
   align-items: center;
   justify-content: center;
@@ -258,8 +314,7 @@ footer > * {
 
 .color-box {
   display: none;
-  align-self:flex-end;
-  /* background-color: aqua; */
+  align-self: flex-end;
   height: 240px;
   width: 100px;
   margin-top: 1rem;
@@ -267,25 +322,65 @@ footer > * {
   border-radius: 5%;
 }
 
-.section-header{
+.section-header {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 
-.icons-pack > *{
+.icons-pack > * {
   margin-right: 1rem;
   margin-left: 1rem;
 }
 
-textarea {
-  border-radius: 5%;
-}
-
 @media screen and (max-width: 1024px) {
+  .navbar {
+    min-height: unset;
+
+    /* padding: 0.8rem !important; */
+  }
+
+  .menu-logos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    padding: 0.8rem !important;
+  }
+
   .menu {
     display: none;
+    height: unset;
+    width: 100%;
+    padding: 0;
+  }
+
+  .menu-item {
+    display: flex;
+    flex-direction: column;
+    border: unset;
+    padding: unset;
+    padding: 0.5rem 0;
+    min-height: 2rem;
+  }
+
+  .d-menu-item {
+    padding-bottom: 0;
+  }
+
+  .dropdown-heading {
+    padding: 0.5rem 0;
+  }
+
+  .drop-down-menu {
+    position: relative;
+    top: unset;
+    width: 100%;
+  }
+
+  .drop-down-menu-item > a {
+    padding: 0.5rem;
   }
 
   #toggleBtn {
@@ -299,7 +394,6 @@ textarea {
   footer {
     flex-direction: column;
   }
-
 
   #site-name {
     font-size: 2rem;
