@@ -1,4 +1,34 @@
 /* eslint-disable no-console */
+
+const closeDropdown = (menuItem, menuItemArr, openDownBtn, dropdownMenu) => {
+    dropdownMenu.classList.remove('show');
+    menuItem.classList.remove('d-menu-item');
+    menuItemArr[0].classList.remove('dropdown-heading');
+    openDownBtn.style.transform = 'initial';
+    menuItem.style.backgroundColor = 'inherit';
+};
+
+const openDropdown = (menuItem, menuItemArr, openDownBtn, dropdownMenu) => {
+    dropdownMenu.classList.add('show');
+    menuItem.classList.add('d-menu-item');
+    menuItemArr[0].classList.add('dropdown-heading');
+    openDownBtn.style.transform = 'rotate(0.5turn)';
+    menuItem.style.backgroundColor = '#371B9D';
+};
+
+const closeAllDropdowns = (dropdowns) => {
+    dropdowns.forEach((menuItem) => {
+        const menuItemArr = menuItem.children;
+        const openDownBtn = menuItemArr[0].lastElementChild;
+        const dropdownMenu = menuItemArr[1];
+        try {
+            closeDropdown(menuItem, menuItemArr, openDownBtn, dropdownMenu);
+        } catch (error) {
+            // console.log('no dropdowns to close');
+        }
+    });
+};
+
 const loadFunc = () => {
     const toggleBtn = document.querySelector('.fa-bars');
     const crossBtn = document.querySelector('.fa-times');
@@ -35,28 +65,13 @@ const loadFunc = () => {
             const dropdownMenu = menuItemArr[1];
             const currentDisplay = window.getComputedStyle(dropdownMenu).getPropertyValue('display');
             if (currentDisplay === 'none') {
-                dropdownMenu.classList.add('show');
-                menuItem.classList.add('d-menu-item');
-                menuItemArr[0].classList.add('dropdown-heading');
-                openDownBtn.style.transform = 'rotate(0.5turn)';
-                menuItem.style.backgroundColor='#371B9D';
-                // openDownBtn.style.display='none';
-                // closeUpBtn.style.display='inherit';
-                // dropdownMenu.style.display = 'inherit';
-                // dropdownMenu.style.zIndex = 1;
+                closeAllDropdowns(dropdowns);
+                openDropdown(menuItem, menuItemArr, openDownBtn, dropdownMenu);
             } else {
-                // dropdownMenu.style.display = 'none';
-                dropdownMenu.classList.remove('show');
-                menuItem.classList.remove('d-menu-item');
-                menuItemArr[0].classList.remove('dropdown-heading');
-                openDownBtn.style.transform = 'initial';
-                menuItem.style.backgroundColor='inherit';
-                // openDownBtn.style.display='inherit';
-                // closeUpBtn.style.display='none';
+                closeDropdown(menuItem, menuItemArr, openDownBtn, dropdownMenu);
             }
         });
     });
-    // dropdown.addEventListener('mouseenter', () => console.log('Dcsdcsc'));
 };
 
 window.addEventListener('load', loadFunc);
