@@ -58,6 +58,10 @@ textarea {
   border-radius: 5%;
 }
 
+input {
+  color: black;
+}
+
 .bgnew {
   z-index: -1;
   height: 100%;
