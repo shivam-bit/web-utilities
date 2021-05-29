@@ -1,0 +1,82 @@
+
+.io-area {
+  flex-direction: column;
+  width: 90%;
+}
+
+.input-area {
+  display: flex;
+  flex-direction: row;
+  font-size: 3rem;
+}
+
+.button-area {
+  display: flex;
+  flex-direction: row;
+}
+
+button {
+  margin: 1rem;
+  justify-content: center;
+  font-size: unset;
+}
+
+.stop,
+.pause,
+.laps,
+.output-area {
+    display: none;
+}
+
+.output-area,
+.output-text {
+  width: 80%;
+  align-items: center;
+}
+
+.section-header {
+  font-size: 2rem;
+}
+
+.lap-table-header,
+.lap-item,
+.section-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+.lap-table-header {
+  border-top: solid rgba(255, 255, 255,0.5) 1px;
+  border-bottom: solid rgba(255, 255, 255,0.5) 1px;
+}
+
+.lap-num,
+.lap-time,
+.cumulative-time{
+  min-width: 140px;
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 1024px) {
+  .output-area {
+    width: 100%;
+  }
+  .output-text{
+    font-size: 1rem;
+  }
+  .lap-num,
+  .lap-time,
+  .cumulative-time{
+    min-width: 115px;
+  }
+  .lap-num{
+    min-width: 90px;
+  }
+  .lap-table-header {
+    border-top: unset;
+    border-bottom: solid rgba(255, 255, 255,0.3) 1px;
+  }
+}
