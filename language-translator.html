@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/styles/epoch.css">
-    <script src="/scripts/epoch.js"></script>
+    <link rel="stylesheet" href="/styles/url-enc-dec.css">
+    <script src="/scripts/translator.js"></script>
     <script src="/script.js"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <title>Epoch time converter</title>
+    <title>Language Translator</title>
 </head>
 <body>
     <div class="bgnew"></div>
@@ -20,7 +20,6 @@
             <i class="fas fa-times" id="crossBtn"></i>
         </div>
         <div class="menu">
-            
             <div class="menu-item"><a href="/rgbHex.html">RGB HEX Converter</a></div>
             <div class="menu-item"> <a href="/stopwatch.html">Stopwatch</a></div>
             <div class="menu-item"> 
@@ -48,42 +47,45 @@
     <section>
         <div class="main">
             <div class="header-text">
-                <h1>Welcome to Epoch Timestamp converter</h1> 
+                <h1>Welcome to Language Translator</h1> 
             </div>
             <div class="ad-space"></div>
             <div class="io-area">
                 <div class="input-area">
                     <div class="section-header">
-                        <label for="input-text"><h2>Timestamp</h2></label>
+                        <label for="input-text"><h2>Input</h2></label>
+                        
                         <div class="icons-pack">
                             <i class="fas fa-copy"></i>
                             <i class="fas fa-trash"></i>
                         </div>
                     </div>
-                    <input type="number" name="" id="timestamp">
-                    <!-- <textarea name="input-text" id="input-text" cols="40" rows="15"></textarea> -->
+                    <textarea name="input-text" id="input-text" cols="40" rows="15"></textarea>
                 </div>
                 <br>
                 <div class="button-area">
-                    <!-- <button id="encodeBtn" class="funcBtn">Encode</button>
-                    <button id="decodeBtn" class="funcBtn">Decode</button> -->
-                    <!-- Epoch timestamp: 1653308715
-                    <br>
-                    Timestamp in milliseconds: 1653308715000 <br>
-                    Date and time (GMT): Monday, 23 May 2022 12:25:15 <br>
-                    Date and time (your time zone): Monday, 23 May 2022 17:55:15 GMT+05:30 -->
+                    
+                    <div class="translate-options">
+                        <div class="inputLangBox">
+                            <label for="input-lang-menu">Select Input Language</label>
+                        </div>
+                        <div class="outputLangBox">
+                            <label for="output-lang-menu">Select Output Language</label>
+                        </div>
+                    </div>
+                    <button id="encodeBtn" class="funcBtn">Translate</button>
+                    <!-- <button id="decodeBtn" class="funcBtn">Decode</button> -->
                 </div>
                 <br>
                 <div class="output-area">
                     <div class="section-header">
-                        <label for="input-text"><h2>Human Date</h2></label>
+                        <label for="input-text"><h2>Output</h2></label>
                         <div class="icons-pack">
-                            <!-- <i class="fas fa-copy"></i>
-                            <i class="fas fa-trash"></i> -->
+                            <i class="fas fa-copy"></i>
+                            <i class="fas fa-trash"></i>
                         </div>
                     </div>
-                    <!-- <textarea name="output-text" id="output-text" cols="40" rows="15"></textarea> -->
-                    <input type="datetime-local" id="datetime" name="birthdaytime">
+                    <textarea name="output-text" id="output-text" cols="40" rows="15"></textarea>
                 </div> 
             </div>
         </div>

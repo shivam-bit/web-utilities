@@ -350,6 +350,16 @@ footer > * {
   margin-right: 1rem;
   margin-left: 1rem;
 }
+.translate-options{
+  max-width: fit-content;
+  margin: 0.5rem 0;
+}
+.translate-options > *{
+  margin: 1rem 0;
+}
+select {
+  max-width: 9rem;
+}
 
 @media screen and (max-width: 1024px) {
   .navbar {
