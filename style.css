@@ -223,6 +223,10 @@ input {
   align-self: center;
 }
 
+.button-area {
+    align-items: center;
+}
+
 .io-area {
   padding: 2rem 1rem;
 }
@@ -451,3 +455,4 @@ select {
     width: 240px;
   }
 }
+
