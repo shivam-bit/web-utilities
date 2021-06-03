@@ -358,7 +358,8 @@ footer > * {
   margin: 1rem 0;
 }
 select {
-  max-width: 9rem;
+  max-width: 10rem;
+  color: black;
 }
 
 @media screen and (max-width: 1024px) {
